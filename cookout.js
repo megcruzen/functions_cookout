@@ -27,6 +27,8 @@ const steak = {
 // A first array containing the objects to be cooked.
 const uncookedFood = [hamburger, zucchini, chickenBreast, corn, steak];
 
+console.log(uncookedFood);
+
 // An empty array that will store the objects after the `grill()` function cooks the food.
 const cookedFood = [];
 
@@ -38,7 +40,7 @@ function grill (currentObject) {
 // Your task is to iterate over the array of uncookedFood and invoke the function for each item so that the cookedFood array contains all of the items after they are cooked.
 
 for (let i = 0; i < uncookedFood.length; i++) {
-    grill(uncookedFood[i].name);
+    grill(uncookedFood[i]);
 }
 
 console.log(cookedFood);
