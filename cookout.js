@@ -44,3 +44,17 @@ for (let i = 0; i < uncookedFood.length; i++) {
 }
 
 console.log(cookedFood);
+
+
+/************ Alternative Below ************/
+
+const grill2 = (uncookedFoodArray) => {
+	for (let i = 0; i < uncookedFoodArray.length; i ++) {
+		let currentItem = uncookedFood[i];
+		currentItem.cooked = true;
+		cookedFood.push(currentItem);
+	}
+}
+
+console.log(cookedFood);
+
